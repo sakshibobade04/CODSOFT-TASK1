@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Sakshi Bobade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> 𝒮𝒶𝓀𝓈𝒽<span>𝓑𝓸</span></a>
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="image"></div>
+                <div class="text">
+                    <h2>About<span>Me</span></h2>
+                    <p>Hi, I'm <strong>Sakshi Bobade</strong>, an MCA student with expertise in <strong>Java, web development, and problem-solving</strong>. I specialize in front-end and back-end development, focusing on efficient software solutions.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sakshi-bobade-794325241/"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://github.com/"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>My<span>Skills</span></h2><br>
+            <div class="skills-grid">
+                <div class="skill-item"><i class='bx bxl-java'></i> Java</div>
+                <div class="skill-item"><i class='bx bxl-html5'></i> CSS3</div>
+                <div class="skill-item"><i class='bx bxl-javascript'></i> JavaScript</div>
+                <div class="skill-item"><i class='bx bx-data'></i> SQL</div>
+                <div class="skill-item"><i class='bx bxl-php'></i> PHP</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My<span>Projects</span></h2><br>
+            <div class="project">
+                <h3 style="color:cornflowerblue;">Farm Produce Management System</h3>
+                <p>A web application that helps farmers sell their produce at better rates without middlemen, ensuring higher profits and quality control.</p>
+                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, PHP, MySQL</p>
+            </div>
+            <div class="project">
+                <h3 style="color:cornflowerblue;">Student Trip Webpage :</h3>
+                <p>A simple webpage for students to register for trips and ask questions, submitting data to the admin panel.</p>
+                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, PHP, MySQL</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>My<span>Resume</span></h2><br><br>
+            <a href="sakshiResume.pdf" download class="btn">Download Resume</a>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact<span>Me</span></h2>
+            <p><i class='bx bxs-phone'></i> 7249758871</p>
+            <p><i class='bx bx-envelope'></i> sakshibobade47@gmail.com</p>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Sakshi Bobade | All Rights Reserved</p>
+    </footer>
+    
+    <script>
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
